@@ -1,6 +1,6 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 
 
-urlpatterns = patterns('',
-    url(r'^', include('article.blog.urls', namespace="blog"))
-)
+urlpatterns = [
+    url(r'^', include('article.blog.urls', namespace="blog")),
+]
